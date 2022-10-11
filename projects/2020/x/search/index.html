@@ -2,11 +2,42 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link rel="stylesheet" href="search.css">
     </head>
     <body>
+        <div id="header">
+            <a href="imageSearch.html">Image Search</a>
+            <a href="advancedSearch.html">Advanced Search</a>
+        </div>
         <form action="https://google.com/search">
             <input type="text" name="q">
             <input type="submit" value="Google Search">
+            <input type="submit" name="btnI" value="I'm Feeling Lucky">
         </form>
     </body>
 </html>
+
+<!--
+Im Feeling lucky GET URL
+https://www.google.com/search?
+q=test
+&
+btnI=Estou+com+sorte
+&
+
+Image Search GET URL
+https://www.google.com.br/search?
+q=test
+&
+tbm=isch
+
+Advanced Search GET URL
+https://www.google.com/search?
+as_q=Um+teste
+&
+as_epq=como+funciona
+&
+as_oq=miniatura+padr%C3%A3o
+&
+as_eq=roedor
+-->
