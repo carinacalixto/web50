@@ -1,3 +1,11 @@
 #header{
     text-align: right;
 }
+
+#logo{
+    align-items:flex-start
+}
+
+.vis{
+    background-color: blueviolet;
+}
