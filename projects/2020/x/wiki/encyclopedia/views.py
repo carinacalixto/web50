@@ -26,8 +26,9 @@ def search(request):
             "title": query
         })
     else:
+        matched_entries = [ e for e in util.list_entries() if (query.lower() in e.lower()) ]
         return render(request, f"encyclopedia/results.html", {
-            "all_entries": util.list_entries(),
+            "entries": matched_entries,
             "query": query
         })
 

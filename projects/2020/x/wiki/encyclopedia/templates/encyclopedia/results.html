@@ -6,10 +6,8 @@
 
 {% block body %}
     <h1>Search Results</h1>
-    {% for entry in all_entries %}
-        {% if query in entry %}
-            <li><a href="/wiki/{{entry}}">{{entry}}</a></li>
-        {% endif %}
+    {% for entry in entries %}
+        <li><a href="/wiki/{{entry}}">{{entry}}</a></li>
     {% endfor %}
     </ul>
 {% endblock %}
